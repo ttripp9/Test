@@ -20,6 +20,8 @@ One core product serves three audiences through different plans:
 
 The engine is the same for all three: assistant, checks, fixes and alerts. Plans only change who is managed, which checks run and the price.
 
+**Multiple versions from one codebase:** each audience gets its own branded version: its own name, landing page, look, wording and default features. For example, the Family version has big buttons and simple words, and the Business version shows dashboards and reports. They all run on the same backend, so a fix or new feature ships to every version at once. Later versions (for example, white-label for MSPs) are just more configs.
+
 ## 2. Problem
 
 - Most people have no one to call when tech breaks. Search results are scattered, outdated or full of ads.
@@ -61,6 +63,18 @@ These move to the roadmap (section 10) as a lightweight desktop agent and mobile
 - Common topics prebuilt as guided flows: Wi-Fi, slow computer, phone storage, printer, email setup, password reset, 2FA setup, new phone transfer, Bluetooth.
 - Saves device profile (e.g., "iPhone 15, iOS 26; Windows 11 laptop") so answers are specific.
 - Safety rules: never ask for passwords; warns before any step that could lose data; refuses to help bypass security on accounts the user doesn't own.
+
+### 5.1a Snap a photo of the problem (all plans)
+- User takes a photo or uploads a screenshot of an error, warning popup, blue screen, router lights or a settings page.
+- The assistant reads it (AI vision), names the problem in one sentence, then starts the matching fix.
+- Works with the phone camera straight from the browser (no app install).
+- Privacy: warns the user before upload if the image may show personal info; images deleted after 30 days; option to blur before sending.
+- Scam checker accepts screenshots too (fake "your computer is infected" popups, suspicious texts).
+
+### 5.1b Assistant character
+- A friendly illustrated character with a name, used across all plans. It is always labeled as AI, never presented as a real person.
+- Optional voice: users can talk instead of type and hear answers read aloud (helps older users).
+- Realistic human video avatar is a later premium option (see roadmap). It is not used in v1 because of cost per minute, and because a lifelike fake human conflicts with teaching users to spot impersonation scams.
 
 ### 5.2 Health check (all plans, different checks per plan)
 
@@ -150,6 +164,7 @@ The free health check is the main way new customers find the product.
 | **v1.1** | Weeks 9–12 | Business plan: Google Workspace first, then M365; insurance helper |
 | **v2** | Months 4–6 | Desktop agent (reads device settings, one-click fixes); AI data-leak browser extension (Business add-on) |
 | **v3** | Months 6–9 | Mobile companion app (scam text screening on Android, help button); remote assist |
+| **v3+** | Later | Premium live video avatar (e.g., HeyGen, Tavus or D-ID), still clearly labeled as AI; white-label version for MSPs |
 
 ## 11. Competitors
 
